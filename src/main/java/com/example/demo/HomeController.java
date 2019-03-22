@@ -19,7 +19,7 @@ public class HomeController {
 
     @GetMapping
     public Resource get() throws FileNotFoundException {
-        Path path = Paths.get("/root/jenkins/jenkinsFile");
+        Path path = Paths.get("/Users/zhaozi/jenkinsfile/Jenkinsfile");
 
         return new InputStreamResource(new FileInputStream(path.toFile()));
     }
